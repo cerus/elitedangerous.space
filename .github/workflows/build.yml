@@ -28,10 +28,10 @@ jobs:
           npm run build
           cd ..
           mkdir static-blog/dist/img
-          mv img/*.png static-blog/dist/img
-          mv img/*.jpg static-blog/dist/img
-          mv img/*.jpeg static-blog/dist/img
-          mv img/*.gif static-blog/dist/img
+          mv img/*.png static-blog/dist/img 2>/dev/null
+          mv img/*.jpg static-blog/dist/img 2>/dev/null
+          mv img/*.jpeg static-blog/dist/img 2>/dev/null
+          mv img/*.gif static-blog/dist/img 2>/dev/null
       - name: "Deploy"
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
