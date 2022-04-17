@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>{blogName} RSS Feed</title>
+    <link>https://elitedangerous.space</link>
+    <description>Unnamed commander blog rss feed. Greetings commanders! Welcome to the unnamed blog of CMDR Cerus. This blog will be used to log my travels and discoveries.</description>
+    <item>
+        <title>Blog credits</title>
+        <link>https://elitedangerous.space/credits</link>
+        <guid>https://elitedangerous.space/credits</guid>
+        <pubDate>Sun, 17 Apr 2022 00:00:00 GMT</pubDate>
+        <description></description>
+    </item>
+    <item>
+        <title>This is my first blog post and it will be epic!</title>
+        <link>https://elitedangerous.space/my-first-blog-post</link>
+        <guid>https://elitedangerous.space/my-first-blog-post</guid>
+        <pubDate>Fri, 01 Oct 2021 00:00:00 GMT</pubDate>
+        <description>This is a description about the blog post. It will be the introductory paragraph used in search results, on blog list pages, and at the top of the blog post. It's pretty important.</description>
+    </item>
+</channel>
+</rss>
