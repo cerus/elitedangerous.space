@@ -21,6 +21,8 @@ jobs:
           mv posts/* static-blog/posts
           mv settings/* static-blog/settings
           cd static-blog
+          npm install
+          npm audit fix
           npm run build
       - name: "Upload artifact"
         uses: actions/upload-artifact@v3
