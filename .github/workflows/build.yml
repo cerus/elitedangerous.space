@@ -28,10 +28,7 @@ jobs:
           npm run build
           cd ..
           mkdir static-blog/dist/img
-          mv img/*.png static-blog/dist/img || true
-          mv img/*.jpg static-blog/dist/img || true
-          mv img/*.jpeg static-blog/dist/img || true
-          mv img/*.gif static-blog/dist/img || true
+          mv img/* static-blog/dist/img || true
       - name: "Deploy"
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
