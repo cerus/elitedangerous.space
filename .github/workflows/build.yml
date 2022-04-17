@@ -26,6 +26,11 @@ jobs:
           npm install
           npm audit fix
           npm run build
+          mkdir static-blog/img
+          mv img/*.png static-blog/img
+          mv img/*.jpg static-blog/img
+          mv img/*.jpeg static-blog/img
+          mv img/*.gif static-blog/img
       - name: "Deploy"
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
