@@ -15,7 +15,8 @@ const authors = {
     },
     "cerus": {
         name: "CMDR Cerus",
-        description: "Full time space explorer. Always on the hunt for new discoveries."
+        description: "Full time space explorer. Always on the hunt for new discoveries. [Inara](https://inara.cz/cmdr/296211/), [EDSM](https://www.edsm.net/en/user/profile/id/125247/cmdr/Cerus_)",
+        metaDescription: "Full time space explorer. Always on the hunt for new discoveries."
     }
 };
 
