@@ -1,0 +1,33 @@
+name: Build and publish test environment
+
+on:
+  workflow_dispatch: { }
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: cerus/elitedangerous.space
+          token: ${{ secrets.GH_TOKEN }}
+          submodules: true
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: "Build blog"
+        run: |
+          git clone https://github.com/codemzy/static-blog
+          rm -rf static-blog/posts/*
+          rm -rf static-blog/settings/*
+          mv posts/* static-blog/posts
+          mv settings/* static-blog/settings
+          cd static-blog
+          npm run build
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v3
+        with:
+          name: Blog
+          path: static-blog/dist
